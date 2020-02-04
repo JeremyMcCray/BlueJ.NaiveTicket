@@ -150,6 +150,8 @@ possible?
 
 ### Exercise 2.14
 * Is it always necessary to have a semicolon at the end of a field declaration?
+
+Answer: Yes.
 * Once again, experiment via the editor.
 * The rule you will learn here is an important one, so be sure to remember it.
 
@@ -157,17 +159,21 @@ possible?
 ### Exercise 2.15
 * Write in full the declaration for a field of type `int` whose name is `status`.
 
+public int status;
+
 ### Exercise 2.16
 * To what class does the following constructor belong?
 ```
 public Student(String name)
 ```
-
+Answer: Student.
 ### Exercise 2.17
 * How many parameters does the following constructor have and what are their types?
 ```
 public Book(String title, double price)
 ```
+
+Answer: 2, theiy are title which is a string, and price which is a double
 
 ### Exercise 2.18
 * Can you guess what types some of the `Book` class’s fields might be?

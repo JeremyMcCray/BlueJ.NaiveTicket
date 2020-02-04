@@ -18,13 +18,21 @@ Work through all these exercises. You edit this file with your answers for these
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
 
+Answer:Zero
+
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
 	* Do you notice anything strange about the machine’s behavior?
 
 	Answer:It will print for any price and will accept negative numbers
+
+
 	* What happens if you insert too much money into the machine – do you receive any refund?
+
+	Answer:It will take however much you give it, give you a ticket, and then clear the rest.
 	* What happens if you do not insert enough and then try to print a ticket?
+
+	Answer:It still prints a ticket
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
@@ -34,9 +42,17 @@ Work through all these exercises. You edit this file with your answers for these
 	* Buy a ticket from that machine.
 	* Does the printed ticket look different?
 
+	Answer:It shows whatever price you put in but nothing else different as fast as i could tell
+
 ### Exercise 2.6
 * Write out what you think the outer wrappers of the `Student` and `LabClass` classes might look like – do not worry about the inner part.
 
+Answer: public class Student{
+	code
+}
+public class LabClass{
+	code
+}
 ### Exercise 2.7
 Does it matter whether we write<br>
 `public class TicketMachine`<br>
@@ -44,29 +60,62 @@ or<br>
 `class public TicketMachine`<br>
 in the outer wrapper of a class?
 
+Answer:Yes, written in the wrong order breaks the program
+
 * Edit the source of the `TicketMachine` class to make the change and then close the editor window.
 	* Do you notice a change in the class diagram?
+
+	Answer: The object has red x's all over it(indicating its broken)
+
+
 	* What error message do you get when you now press the compile button?
+
+
+	Answer:<identifier> expected, illegal start of expression, invalid method declaration
+
 	* Do you think this message clearly explains what is wrong?
+
+	Answer:I think it gives enough for me to either google it or if i had more extensive knowledge be able to fix the problem
 
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
+
+Answer: you can
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
 
+Answer:
+
+fields- price, balance, total, ticketNumber
+
+constructor-TicketMachine
+
+methods- getPrice, getBalance, getTicketNumber, insertMoney, calculateTotal, incrimateTicketNumber,printTicket
+
 ### Exercise 2.10
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
+
+Answer:it isnt assigned a datatype before the name of the object.
 
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
 
 ```java
 private int count;
+
+Answer: a number/an integer
+
 private Student representative;
+
+Answer: an object
+
 private Server host;
+
+Answer: an object
+
 ```
 
 ### Exercise 2.12
@@ -74,8 +123,16 @@ private Server host;
 
 ```java
 private boolean alive;
+
+Answer: alive
 private Person tutor;
+
+Answer: tutor
+
+
 private Game game;
+
+Answer: game
 ```
 ### Exercise 2.13
 

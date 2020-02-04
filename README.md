@@ -21,6 +21,8 @@ Work through all these exercises. You edit this file with your answers for these
 ### Exercise 2.3
 * Experiment with inserting different amounts of money before printing tickets.
 	* Do you notice anything strange about the machine’s behavior?
+
+	Answer:It will print for any price and will accept negative numbers
 	* What happens if you insert too much money into the machine – do you receive any refund?
 	* What happens if you do not insert enough and then try to print a ticket?
 
